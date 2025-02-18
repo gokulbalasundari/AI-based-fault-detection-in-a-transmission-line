@@ -2,7 +2,7 @@ from django.urls import path
 from .views import*
 
 urlpatterns =[
-    path('input/',inputform),
+    path('',inputform),
     path('result/',result)
 
 ]
