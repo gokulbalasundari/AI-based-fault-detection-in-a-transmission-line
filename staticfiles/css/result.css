@@ -1,28 +1,55 @@
-       body {
-            font-family: Arial, sans-serif;
-            background-image: url('/static/asset/background.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .output-box {
-            padding: 20px;
-            font-size: 18px;
-            border: 2px solid #333;
-            border-radius: 5px;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/static/asset/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px; /* Ensures spacing on smaller screens */
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.output-box {
+    padding: 20px;
+    font-size: 20px;
+    color: #333;
+    border: 2px solid #444;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
     
+    .title {
+        font-size: 20px;
+    }
+
+    .output-box {
+        font-size: 18px;
+        padding: 15px;
+    }
+}
