@@ -1,0 +1,28 @@
+       body {
+            font-family: Arial, sans-serif;
+            background-image: url('/static/asset/background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .output-box {
+            padding: 20px;
+            font-size: 18px;
+            border: 2px solid #333;
+            border-radius: 5px;
+        }
+    

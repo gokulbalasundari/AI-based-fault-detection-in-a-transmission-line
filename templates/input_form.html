@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Based Transmission Line Fault Detection</title>
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Correct Static Path for CSS -->
+    <link rel="stylesheet" href="{% static 'css/InputFormDesign.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>AI-Based Transmission Line Fault Detection</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="input-row">
+                <input type="text" class="input-box" placeholder="Ia" name="Ia" id="Ia">
+                <input type="text" class="input-box" placeholder="Ib" name="Ib" id="Ib">
+                <input type="text" class="input-box" placeholder="Ic" name="Ic" id="Ic">
+            </div>
+            <div class="input-row">
+                <input type="text" class="input-box" placeholder="Va" name="Va" id="Va">
+                <input type="text" class="input-box" placeholder="Vb" name="Vb" id="Vb">
+                <input type="text" class="input-box" placeholder="Vc" name="Vc" id="Vc">
+            </div>
+            <input type="submit" value="Predict" class="predict-button">
+        </form>
+    </div>
+</body>
+</html>
+
