@@ -25,7 +25,7 @@ def inputform(request):
             df = pd.read_csv(csv_path)
 
             print("Dataset Loaded Successfully!")
-            print(df.head())
+
             X = df.iloc[:, 0:6]
             y = df.iloc[:, 6:10]
 
@@ -76,5 +76,4 @@ def inputform(request):
     return render(request, 'input_form.html')
 
 
-def result(request):
-    return render(request, 'result.html')
+

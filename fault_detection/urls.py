@@ -3,6 +3,6 @@ from .views import*
 
 urlpatterns =[
     path('',inputform),
-    path('result/',result)
+    
 
 ]
