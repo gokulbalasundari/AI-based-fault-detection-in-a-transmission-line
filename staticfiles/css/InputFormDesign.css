@@ -7,36 +7,65 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 600px;
+    margin: 5% auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-top: 100px;
 }
-.input-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
+
+/* Input field styles */
 .input-box {
-    flex: 1;
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
     border: 2px solid #333;
     border-radius: 5px;
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
+
+/* Button styles */
 .predict-button {
-    width: 40%;
-    padding: 10px;
-    font-size: 16px;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
     background-color: #333;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.predict-button:hover {
+    background-color: #555;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    .title {
+        font-size: 20px;
+    }
+
+    .input-box {
+        font-size: 14px;
+    }
+
+    .predict-button {
+        font-size: 16px;
+    }
 }
